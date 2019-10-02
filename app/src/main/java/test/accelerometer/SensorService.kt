@@ -66,6 +66,7 @@ class SensorService : Service(), SensorEventListener {
                     sensorManager.registerListener(this, sensorAcceleration, SensorManager.SENSOR_DELAY_NORMAL)
                     isListeningStarted = true
                     sendBroadcastStateInfo()
+                    sendBroadcastStepsInfo()
                     startForeground(NOTIFICATION_ID, buildNotification())
                 }
             }
@@ -73,6 +74,8 @@ class SensorService : Service(), SensorEventListener {
                 // удаляем слушателя
                 sensorManager.unregisterListener(this)
                 isListeningStarted = false
+                // очищаем счетчик
+                stepsCount = 0
                 sendBroadcastStateInfo()
                 stopForeground(true)
             }

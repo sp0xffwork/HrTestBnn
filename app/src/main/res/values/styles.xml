@@ -7,9 +7,28 @@
     </style>
 
     <style name="ColoredButton" parent="Base.Widget.AppCompat.Button.Colored">
+        <item name="android:textSize">14sp</item>
         <item name="android:textColor">@color/colorButtonText</item>
         <item name="colorButtonNormal">@color/colorButtonNormal</item>
         <item name="colorControlHighlight">@color/colorButtonControlHighlight</item>
+    </style>
+
+    <style name="StepsCountFont">
+        <item name="android:textSize">40sp</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="StepsTextFont">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#999</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="NotAvailableTextFont">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/colorTextUnavailable</item>
+        <item name="android:textStyle">bold</item>
     </style>
 
 </resources>

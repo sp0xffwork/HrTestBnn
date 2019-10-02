@@ -16,19 +16,17 @@
         android:visibility="gone">
 
         <TextView
-            android:text="0"
-            android:textColor="#000"
-            android:textStyle="bold"
             android:id="@+id/textSteps"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="40sp" />
+            android:text="0"
+            android:textAppearance="@style/StepsCountFont" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/steps"
-            android:textSize="24sp" />
+            android:textAppearance="@style/StepsTextFont" />
 
     </LinearLayout>
 
@@ -38,19 +36,17 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:text="@string/not_available"
-        android:textColor="@color/colorTextUnavailable"
-        android:textSize="18sp"
+        android:textAppearance="@style/NotAvailableTextFont"
         android:visibility="gone" />
 
     <LinearLayout
-        android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true">
+        android:layout_centerHorizontal="true"
+        android:gravity="center">
 
         <Button
-            android:textSize="18sp"
             android:id="@+id/buttonStart"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -58,7 +54,6 @@
             android:theme="@style/ColoredButton" />
 
         <Button
-            android:textSize="18sp"
             android:id="@+id/buttonStop"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
