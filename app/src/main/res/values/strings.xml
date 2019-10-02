@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Тестовое задание</string>
+    <string name="not_available">Недоступно</string>
+    <string name="steps">шаги</string>
+    <string name="button_start">Пуск</string>
+    <string name="button_stop">Стоп</string>
+    <string name="pedometer">Шагомер</string>
+</resources>
